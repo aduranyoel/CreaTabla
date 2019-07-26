@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+.semaforo{
+width: 5px;
+height: 25px;
+}
+
+/* 
+.wrap {
+    position:relative;
+    overflow:hidden;
+    padding:25px 0 0;
+}
+.inner {
+    height:200px;
+    overflow:auto;
+}
+
+table {
+    margin:0 0 0 -1px;
+    border-collapse:collapse; 
+}
+
+thead tr p {
+    position:absolute;
+    top:0;
+} */
+
