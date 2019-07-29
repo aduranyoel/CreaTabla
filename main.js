@@ -1,4 +1,4 @@
-//'use strict';
+'use strict';
 
 var columns = ["ID", "NOMBRE", "USERNAME", "EMAIL", "WEBSITE", "PHONE"]
 var rows = [];
@@ -6,8 +6,6 @@ AjaxUtil({
     url: "https://jsonplaceholder.typicode.com/users",
     type: "GET",
     success: function(data){
-
-        console.log(data);
         data.forEach(function(e, index){
             rows.push([
                 e.id,
@@ -18,10 +16,10 @@ AjaxUtil({
                 e.phone
             ])
         })
+
         CreaTabla("tableContainner", {
             col: columns,
             rows: rows,
-
             fixed: {
                 enabled: true
             },
@@ -29,8 +27,3 @@ AjaxUtil({
         })
     }
 })
-
-
-
-
-
