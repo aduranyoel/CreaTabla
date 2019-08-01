@@ -87,7 +87,7 @@ function CreaTabla(idContenedor, options)
     var th = theadElement.childNodes;
     if (options.css.length > 0){
         options.css.forEach(function(e){
-            e.target.forEach(function(t,i){
+            e.target.forEach(function(t){
                 th[t].style[e.prop]=e.val;
             })
         })
