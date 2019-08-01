@@ -20,8 +20,13 @@ AjaxUtil({
         CreaTabla("tableContainner", {
             col: columns,
             rows: rows,
+            class: ["table"],
+            css: [
+                {target: [0,1,2,3,4,5], prop: "padding-left", val: "8px"}
+            ],
             fixed: {
-                enabled: true
+                enabled: true,
+                height: "50vh"
             },
             search: true
         })
